@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="main.css">
+        <title>電卓</title>
+    </head>
+ 
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" class="display" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" onclick="num_click(this.value)" value="7"></td>
+                    <td><input type="button" onclick="num_click(this.value)" value="8"></td>
+                    <td><input type="button" onclick="num_click(this.value)" value="9"></td>
+                    <td><input type="button" onclick="ope_click(this.value)" value="+"></td>
+                    <td><input type="button" onclick="ope_click(this.value)" value="-"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" onclick="num_click(this.value)" value="4"></td>
+                    <td><input type="button" onclick="num_click(this.value)" value="5"></td>
+                    <td><input type="button" onclick="num_click(this.value)" value="6"></td>
+                    <td><input type="button" onclick="ope_click(this.value)" value="×"></td>
+                    <td><input type="button" onclick="ope_click(this.value)" value="÷"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="num_click(this.value)" value="1"></td>
+                    <td><input type="button" onclick="num_click(this.value)" value="2"></td>
+                    <td><input type="button" onclick="num_click(this.value)" value="3"></td>
+                    <td colspan="2"><input type="button" name="equal" onclick="equal_click()" value="="></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="num_click(this.value)" value="0"></td>
+                    <td><input type="button" onclick="num_click(this.value)" value="00"></td>
+                    <td><input type="button" onclick="num_click(this.value)" value="."></td>
+                    <td colspan="2"><input type="button" name="allClear" onclick="ac_click()" value="AC"></td>
+                </tr>
+            </table>
+        </form>
+
+        <script src="main.js"></script>
+    </body>
+</html>  
